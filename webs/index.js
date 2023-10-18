@@ -8,7 +8,7 @@ const Minio = require('minio');
 const amqp = require('amqplib');
 const nodemailer = require('nodemailer');
 
-const apiKey = '637a409316c74cb593a1648b47d43e91';
+const apiKey = '';
 const endpoint = 'https://westeurope.api.cognitive.microsoft.com';
 const mongojs = require('mongojs');
 //const db = mongojs('mongodb://localhost:27017/local', ['localcollection']);
@@ -213,8 +213,8 @@ const minioClient = new Minio.Client({
     endPoint: 'minio', // Replace with your Minio server IP or hostname        // replace with minio
     port: 9000, // Replace with the Minio server port
     useSSL: false, // Set to true if your Minio server uses SSL
-    accessKey: 'ueNGwRL2vRj0jG6YGRK3', // Replace with your Minio access key
-    secretKey: 'PRTgfjiVtGlfmTCy3iTKERye0eoyh4bGvr7rohNm', // Replace with your Minio secret key
+    accessKey: '', // Replace with your Minio access key
+    secretKey: '', // Replace with your Minio secret key
 });
 
 const transporter = nodemailer.createTransport({
