@@ -1,0 +1,12 @@
+docker build -t webserver .
+docker run -p 8000:8000 webserver
+
+
+
+
+
+
+
+docker-compose up -d
+
+ja met error - docker-compose down -v    un tad docker-compose up --build

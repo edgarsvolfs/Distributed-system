@@ -1,0 +1,30 @@
+version: '3'
+services:
+  minio:
+    build:
+      context: ./minio
+      dockerfile: Dockerfile
+    ports:
+      - 9000:9000
+
+  rabbitmq:
+    build:
+      context: ./rabbitmq
+      dockerfile: Dockerfile
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  mongodb:
+    build:
+      context: ./mongodb
+      dockerfile: Dockerfile
+    ports:
+      - 27017:27017
+
+  nodejs:
+    build:
+      context: ./webs
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
